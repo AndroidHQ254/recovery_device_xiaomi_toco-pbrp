@@ -15,8 +15,8 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := phoenix
-DEVICE_PATH := device/xiaomi/phoenix
+PRODUCT_RELEASE_NAME := toco
+DEVICE_PATH := device/xiaomi/toco
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
@@ -31,10 +31,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock.recovery
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := phoenix
-PRODUCT_NAME := omni_phoenix
+PRODUCT_DEVICE := toco
+PRODUCT_NAME := omni_toco
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Poco X2
+PRODUCT_MODEL := Mi Note 10 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # HACK: Set vendor patch level
@@ -47,4 +47,3 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.build.product \
     ro.bootimage.build.date.utc \
     ro.build.date.utc
-

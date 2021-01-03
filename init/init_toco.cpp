@@ -75,12 +75,9 @@ void model_property_override(const std::string& device, const std::string& model
 void vendor_load_properties() {
     const std::string region = GetProperty("ro.boot.hwc", "");
 
-	if (region == "INDIA") {
-            model_property_override("phoenixin", "POCO X2");
+	if (region == "GLOBAL") {
+            model_property_override("toco", "Mi Note 10 Lite");
 	    }
-	else if (region == "CN") {
-            model_property_override("phoenix", "Redmi K30");
-    	  }
 }
 
 }
